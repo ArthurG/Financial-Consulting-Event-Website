@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Minimize your Interest</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="assets/js/modernizr.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Arthur Guo</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+          
+            <li><a href="index.html">Home</a></li>
+            
+            <li><a href="utilization.html">Utilization</a></li>
+            <li><a href="reminder.html">Payoff reminder</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="resources.html">Resources</a></li>
+                 <!-- <li><a href="faq.html">FAQ</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+            
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>Get ready for your Home.</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+
+	<!-- *****************************************************************************************************************
+	 CONTACT WRAP
+	 ***************************************************************************************************************** -->
+
+	 <div id="contactwrap"></div>
+	 
+	<!-- *****************************************************************************************************************
+	 CONTACT FORMS
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mtb">
+	 	<div class="row">
+	 		<div class="col-lg-8">
+	 			<h4>Prepare for your future Home purchase</h4>
+				<div class = "errors"></div>
+	 			<div class="hline"></div>
+		 			<p>Enter your information and I will tell you how to reach your goal of buying your Home! I will show you how to get the lowest interest possible and save quickly for your Home purchase.</p>
+		 			<form role="form" id = "ccForm" onsubmit="return false" class = "form-horizontal">
+					  		  
+        	        	<label for="cc1-group" class = "section-title">Credit Card One</label>
+						<div class="form-group form-group-large" id = "cc1-group">
+							<label for = "cc1name" class = "col-md-2 col-xs-4">Credit Card</label>
+                   	         <div class = "col-md-4 col-xs-8">
+										<input type="text" class="form-control" id="cc1name" placeholder="Credit Card Company" >                             
+									
+                    	        </div>
+							
+								<label for = "cc1rate" class = "col-md-2 col-xs-4">Interest rate</label>
+                    	        <div class = "col-md-4 col-xs-8">
+									<div class = "input-group">
+										<input type="text" class="form-control" id="cc1rate" placeholder="Annual Interest Rate" >                             
+                           	    		<span class = "input-group-addon">%</span>
+                        	         </div>
+								</div>
+							
+								<label for = "cc1balance" class = "col-md-2 col-xs-4">Balance</label>
+                    	        <div class = "col-md-4 col-xs-8">
+									<div class = "input-group">
+	                                    <span class = "input-group-addon">$</span>
+										<input type="text" class="form-control" id="cc1balance" placeholder="Balance" >
+									</div>
+                            	</div>
+							</div> 
+						
+						<label for="cc2-group" class = "section-title">Credit Card Two</label>
+						<div class="form-group form-group-large" id = "cc2-group">
+							<label for = "cc2name" class = "col-md-2 col-xs-4">Credit Card</label>
+                   	         <div class = "col-md-4 col-xs-8">
+										<input type="text" class="form-control" id="cc2name" placeholder="Credit Card Company" >                             
+									
+                    	        </div>
+							
+								<label for = "cc2rate" class = "col-md-2 col-xs-4">Interest rate</label>
+                    	        <div class = "col-md-4 col-xs-8">
+									<div class = "input-group">
+										<input type="text" class="form-control" id="cc2rate" placeholder="Annual Interest Rate" >                             
+                           	    		<span class = "input-group-addon">%</span>
+                        	         </div>
+								</div>
+							
+								<label for = "cc2balance" class = "col-md-2 col-xs-4">Balance</label>
+                    	        <div class = "col-md-4 col-xs-8">
+									<div class = "input-group">
+	                                    <span class = "input-group-addon" >$</span>
+										<input type="text" class="form-control" id="cc2balance" placeholder="Balance" >
+									</div>
+                            	</div>
+							</div>
+                            
+                            
+                           <label for="cc3-group" class = "section-title">Credit Card Three</label>
+						<div class="form-group form-group-large" id = "cc3-group">
+							<label for = "cc3name" class = "col-md-2 col-xs-4">Credit Card</label>
+                   	         <div class = "col-md-4 col-xs-8">
+										<input type="text" class="form-control" id="cc3name" placeholder="Credit Card Company" >                             
+									
+                    	        </div>
+							
+								<label for = "cc3rate" class = "col-md-2 col-xs-4">Interest rate</label>
+                    	        <div class = "col-md-4 col-xs-8">
+									<div class = "input-group">
+										<input type="text" class="form-control" id="cc3rate" placeholder="Annual Interest Rate" >                             
+                           	    		<span class = "input-group-addon">%</span>
+                        	         </div>
+								</div>
+							
+								<label for = "cc3balance" class = "col-md-2 col-xs-4">Balance</label>
+                    	        <div class = "col-md-4 col-xs-8">
+									<div class = "input-group">
+	                                    <span class = "input-group-addon">$</span>
+										<input type="text" class="form-control" id="cc3balance" placeholder="Balance" >
+									</div>
+                            	</div>
+							</div>
+						
+					<label for = "savings-group" class = "section-title">Savings information</label>
+					<div class="form-group form-group-large" id = "savings-group">						
+						<label for = "savings" class = "col-md-2 col-xs-4">Current savings</label>
+                      	<div class = "col-md-4 col-xs-8">
+							<div class = "input-group">
+	                            <span class = "input-group-addon">$</span>
+                            	<input type="text" class="form-control" id="savings" placeholder="Current savings">
+                            </div>
+						</div>
+						
+						<label for = "savingsrate" class = "col-md-2 col-xs-4">Savings rate</label>
+						<div class = "col-md-4 col-xs-8">	
+                        	<div class = "input-group">			
+                    	    	<input type="text" class="form-control" id="savingsrate" placeholder="Interest rate on savings">
+	                            <span class = "input-group-addon">%</span>
+                        	</div>
+                        </div>
+                        <label for="monthlysaving" class = "col-md-2 col-xs-4">Monthly savings</label>
+                        <div class = "col-md-10 col-xs-8">
+                        	<div class = "input-group">
+                        	<span class = "input-group-addon">$</span>
+					    		<input type="text" class="form-control" id="monthlysaving" placeholder="How much will you save every month?">
+                        	</div>
+                        </div>
+                      </div>
+                      
+					<label for="Home-group" class= "section-title">Your New Home</label>
+					   <div class="form-group" id = "Home-group">
+							<label for = "Homeprice" class = "col-md-2 col-xl-4">Estimated Home price </label>
+							<div class = "col-md-4 col-xl-8">	
+                        	<div class = "input-group">		
+                            	<span class = "input-group-addon">$</span>
+								<input type="text" class="form-control" id="Homeprice" placeholder="Estimated Home price">
+                            </div>
+							</div>
+							<label for = "time" class = "col-md-2 col-xs-4">Mortgage Term (years) </label>
+							<div class = "col-md-4 col-xs-8">
+								<input type="text" class="form-control" id="time" placeholder="Mortgage Term">
+							</div>
+                        </div>
+                        
+                        <div class= "form-group">
+							<label for = "downpayment" class = "section-title col-md-12 col-xs-12">Home purchase deadline</label>
+							<div class = "col-md-12 col-xs-12">
+							<select id = "downpayment" class = "input-group dropdown-menu col-md-12 col-xs-12">
+               					<option value = "5" >I prefer the house as soon as possible (5% Home price down payment)</option>
+               					<option value = "10">I prefer the house soon(10% Home price down payment)</option>
+               					<option value = "15">I prefer the house as soon, but I also want a low interest rate (15% Home price down payment,)</option>
+               					<option value = "20">I prefer a low interest rate(20% Home price down payment)</option>
+               					<option value = "25">I prefer the lowest interest possible (25% Home price down payment)</option>
+               					<option value = "100">Other (Custom downpayment percentage)</option>
+             				</select>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class = "form-group" id = "downpayment-group">
+                        <label for = "downpayment-custom" class = "col-md-2 col-xs-4">Downpayment (%)</label>
+                            <div class = "col-md-10 col-xs-8">
+                            	<div class = "input-group">
+                            		<input type="text" class="form-control" id="downpayment-custom" placeholder="Downpayment (%)">
+                            		<span class = "input-group-addon">%</span>
+                            	</div>
+                            </div>
+                         </div>
+                        
+						
+						<label for = "personal-info" class = "section-title">Your Personal Info</label>
+                      <div class="form-group" id = "personal-info">
+						<label for="income" class = "col-md-2 col-xs-4">Your monthly income</label>
+                        <div class = "col-md-10 col-xs-8">
+                        	<div class = "input-group">
+ 	                       		<span class = "input-group-addon">$</span>
+								<input type="text" class="form-control" id="income" placeholder="What is your gross monthly (after tax) income?">
+							</div>
+    					</div>
+						
+						<label for = "lio" class = "col-md-12 col-xs-12">Select the low interest borrowing option you plan to take</label>
+						<div class = "col-md-12 col-xs-12">
+                        	<select id = "lio" class = "input-group dropdown-menu col-md-12 col-xs-12">
+               					<option value = "1">None</option>
+               					<option value = "2">Chase Slate(0% annual interest for 12 months, 3% transfer fee)</option>
+               					<option value = "3">Discover It(0% annual interest for 18 months, 3% transfer fee)</option>
+               					<option value = "4">TD Bank Cash Rewards (13.62% annual interest for 24 months, 0% transfer fee)</option>
+                                <option value = "5">Other(Fill custom values)</option>
+             				</select>
+                        <div class="help">Unsure? Click here to select the best card for you</div>
+						</div>
+						</div>
+                        
+						<div class="form-group form-group-large" id = "custom-transfer">
+							<label for = "consolidatedLender" class = "col-md-4 col-xs-12">Credit Card Name</label>
+							<div class = "col-md-8 col-xs-12">
+								<input type="text" class="form-control" id="consolidatedLender" placeholder="Credit Card Name">
+							</div>
+							
+							<label for = "consolidatedTransfer" class = "col-md-4 col-xs-12">Transfer Fee (%)</label>
+							<div class = "col-md-8 col-xs-12">
+                            	<div class = "input-group">                       
+									<input type="text" class="form-control" id="consolidatedTransfer" placeholder="Transfer Fee">
+                                	<span class = "input-group-addon">%</span>
+                            	</div>
+							</div>
+							
+							<label for = "consolidatedTime" class = "col-md-4 col-xs-12">Promotional Period (months)</label>
+							<div class = "col-md-8 col-xs-12">
+								<input type="text" class="form-control" id="consolidatedTime" placeholder="Promotional Period">
+							</div>
+                            
+                            <label for = "consolidatedRate" class = "col-md-4 col-xs-12">Interest Rate (%)</label>
+							<div class = "col-md-8 col-xs-12">
+                            	<div class = "input-group">    
+								<input type="text" class="form-control" id="consolidatedRate" placeholder="Interest Rate">
+                                <span class = "input-group-addon">%</span>
+                                </div>
+							</div>
+                            
+						</div> 
+                        				
+					  <button type="button" class="btn btn-theme" id = "submit-button">Submit</button>
+					</form>
+			</div><! --/col-lg-8 -->
+	 		
+	 		<div class="col-lg-4 col-md-4 col-xs-12">
+		 		<h4>Warnings:</h4>
+		 		<div class="hline"></div>
+		 			<p class = "warnings">
+						If there are warnings, they will be displayed here after you click the "submit" button.
+ 		 			</p>
+		 		<h4>Steps:</h4>
+		 			<p class = "steps">
+		 				The steps you will need to take will be displayed here after you click the "submit" button
+					</p>
+	 		</div>
+	 	</div><! --/row -->
+	 </div><! --/container -->
+
+
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	 <div id="footerwrap">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-lg-4 col-md-4 col-xs-12">
+		 			<h4>About</h4>
+		 			<div class="hline-w"></div>
+		 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+		 		</div>
+		 		<div class="col-lg-4 col-md-4 col-xs-12">
+		 			<h4>Social Links</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				<a href="#"><i class="fa fa-dribbble"></i></a>
+		 				<a href="#"><i class="fa fa-facebook"></i></a>
+		 				<a href="#"><i class="fa fa-twitter"></i></a>
+		 				<a href="#"><i class="fa fa-instagram"></i></a>
+		 				<a href="#"><i class="fa fa-tumblr"></i></a>
+		 			</p>
+		 		</div>
+		 		<div class="col-lg-4 col-md-4 col-xs-12">
+		 			<h4>Our Bunker</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				Some Ave, 987,<br/>
+		 				23890, New York,<br/>
+		 				United States.<br/>
+		 			</p>
+		 		</div>
+		 	
+		 	</div><! --/row -->
+	 	</div><! --/container -->
+	 </div><! --/footerwrap -->
+	 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/retina-1.1.0.js"></script>
+	<script src="assets/js/jquery.hoverdir.js"></script>
+	<script src="assets/js/jquery.hoverex.min.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+  	<script src="assets/js/jquery.isotope.min.js"></script>
+  	<script src="assets/js/custom.js"></script>
+  	<script src="assets/js/steps.js"></script>
+
+  </body>
+</html>

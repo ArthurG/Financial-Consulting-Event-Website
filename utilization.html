@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Arthur Guo, CFP: Credit Utilization Calculator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="assets/js/modernizr.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Arthur Guo</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+          
+          <li><a href="index.html">Home</a></li>
+            
+            <li><a href="utilization.html" class = "active">Utilization</a></li>
+            <li><a href="reminder.html">Payoff reminder</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="resources.html">Resources</a></li>
+                 <!-- <li><a href="faq.html">FAQ</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          
+          
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>Minimize your interest.</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+
+	<!-- *****************************************************************************************************************
+	 CONTACT WRAP
+	 ***************************************************************************************************************** -->
+
+	 <div id="contactwrap"></div>
+	 
+	<!-- *****************************************************************************************************************
+	 CONTACT FORMS
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mtb">
+	 	<div class="row">
+	 		<div class="col-lg-8">
+	 			<h4>Maintain a 10% Credit Utilization</h4>
+	 			<div class="hline"></div>
+		 			<p>If you need help calculating how much money to pay off to reach a 10% credit utilization, this form will be able to help you. Please enter the values for each of your credit cards below.</p>
+                    <div class = "form-errors"></div>
+		 			<form role="form" class="form-horizontal">
+                                             
+                        <label for = "cc1" class = "section-title">Credit Card One</label>
+                        <div class="form-group" id = "cc1">
+                        <label for = "cc1name" class = "col-xl-2 col-md-3  col-xs-6">Credit Card Company</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6">  
+					    	<input type="text" class="form-control" id="cc1name" placeholder="Credit Card Company">
+                        </div>
+                        <label for = "cc1rate" class = "col-xl-2 col-md-3  col-xs-6">Interest Rate (%)</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6"> 
+                        
+                        	<div class = "input-group">
+                        		<input type="text" class="form-control" id="cc1rate" placeholder="Interest Rate (%)">
+                            	<span class = "input-group-addon">%</span>
+                            </div>
+                        </div>
+                        <label for = "cc1balance" class = "col-xl-2 col-md-3  col-xs-6">Balance ($)</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6"> 
+                        	<div class = "input-group">
+	                            <span class = "input-group-addon">$</span>
+	                        	<input type="text" class="form-control" id="cc1balance" placeholder="Balance ($)">
+                            </div>
+                        </div>
+                        <label for = "cc1limit" class = "col-xl-2 col-md-3  col-xs-6">Credit Limit ($)</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6"> 
+                        	<div class = "input-group">
+	                            <span class = "input-group-addon">$</span>
+                        	<input type="text" class="form-control" id="cc1limit" placeholder="Credit Limit ($)">
+                            </div>
+                        </div>
+                      </div>
+                                                
+                                               
+                        <label for = "cc2" class = "section-title">Credit Card Two</label>
+                        <div class="form-group" id = "cc2">
+                        <label for = "cc2name" class = "col-xl-2 col-md-3  col-xs-6">Credit Card Company</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6">  
+					    	<input type="text" class="form-control" id="cc2name" placeholder="Credit Card Company">
+                        </div>
+                        <label for = "cc2rate" class = "col-xl-2 col-md-3  col-xs-6">Interest Rate (%)</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6"> 
+                        	<div class = "input-group">
+                        		<input type="text" class="form-control" id="cc2rate" placeholder="Interest Rate (%)">
+	                            <span class = "input-group-addon">%</span>
+                            </div>
+                        </div>
+                        <label for = "cc2balance" class = "col-xl-2 col-md-3  col-xs-6">Balance ($)</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6"> 
+                        	<div class = "input-group">
+	                            <span class = "input-group-addon">$</span>
+                        		<input type="text" class="form-control" id="cc2balance" placeholder="Balance ($)">
+                            </div>
+                        </div>
+                        <label for = "cc2limit" class = "col-xl-2 col-md-3  col-xs-6">Credit Limit ($)</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6"> 
+                        	<div class = "input-group">
+	                            <span class = "input-group-addon">$</span>
+                        		<input type="text" class="form-control" id="cc2limit" placeholder="Credit Limit ($)">
+                             </div>
+                        </div>
+                      </div>
+                                                                  
+                        <label for = "cc3" class = "section-title">Credit Card Three</label>
+                        <div class="form-group" id = "cc3">
+                        <label for = "cc3name" class = "col-xl-2 col-md-3  col-xs-6">Credit Card Company</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6">  
+					    	<input type="text" class="form-control" id="cc3name" placeholder="Credit Card Company">
+                        </div>
+                        <label for = "cc3rate" class = "col-xl-2 col-md-3  col-xs-6">Interest Rate (%)</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6"> 
+                        
+                        	<div class = "input-group">
+                        	<input type="text" class="form-control" id="cc3rate" placeholder="Interest Rate (%)">
+	                            <span class = "input-group-addon">%</span>
+                            </div>
+                        </div>
+                        <label for = "cc3balance" class = "col-xl-2 col-md-3  col-xs-6">Balance ($)</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6"> 
+                        	<div class = "input-group">
+	                            <span class = "input-group-addon">$</span>
+                        		<input type="text" class="form-control" id="cc3balance" placeholder="Balance ($)">
+                            </div>
+                        </div>
+                        <label for = "cc1limit" class = "col-xl-2 col-md-3  col-xs-6">Credit Limit ($)</label>
+                        <div class= "col-xl-4 col-md-3 col-xs-6"> 
+                        	<div class = "input-group">
+	                            <span class = "input-group-addon">$</span>
+                        		<input type="text" class="form-control" id="cc3limit" placeholder="Credit Limit ($)">
+                            </div>
+                        </div>
+                      </div>	   
+				
+					  <button type="button" class="btn btn-theme" id = "submit-button">Submit</button>
+					</form>
+			</div><! --/col-lg-8 -->
+	 		
+	 		<div class="col-lg-4">
+		 		<h4>Steps:</h4>
+		 			<p class = "steps">
+					Your payment instructions will appear here once you click the "submit" button
+					</p>
+	 		</div>
+	 	</div><! --/row -->
+	 </div><! --/container -->
+
+
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	
+	 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/retina-1.1.0.js"></script>
+	<script src="assets/js/jquery.hoverdir.js"></script>
+	<script src="assets/js/jquery.hoverex.min.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+  	<script src="assets/js/jquery.isotope.min.js"></script>
+  	<script src="assets/js/custom.js"></script>
+  	<script src="assets/js/utilization.js"></script>
+
+  </body>
+</html>

@@ -1,4 +1,4 @@
-#DECA Financial Consulting Event (FCE) 2015 Website
+#DECA Financial Consulting Event (FCE) 2015
 
 ##The Website
 

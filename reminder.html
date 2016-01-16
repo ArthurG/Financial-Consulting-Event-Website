@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Arthur Guo, CFP: Payoff Reminder</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/clockpicker.css" rel="stylesheet"/>
+    <link href="assets/datepicker/css/datepicker.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-switch.css" rel="stylesheet"/>
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="assets/js/modernizr.js"></script> 
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Arthur Guo</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+          
+          <li><a href="index.html">Home</a></li>
+            
+            <li><a href="utilization.html">Utilization</a></li>
+            <li><a href="reminder.html" class = "active">Payoff reminder</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="resources.html">Resources</a></li>
+                 <!-- <li><a href="faq.html">FAQ</a></li> -->
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          
+          
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+				<h3>Credit Card Payoff Reminder.</h3>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+
+	<!-- *****************************************************************************************************************
+	 CONTACT WRAP
+	 ***************************************************************************************************************** -->
+
+	 <div id="contactwrap"></div>
+	 
+	<!-- *****************************************************************************************************************
+	 CONTACT FORMS
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mtb">
+	 	<div class="row">
+	 		<div class="col-lg-12">
+	 			<h4>Payoff Reminder</h4>
+	 			<div class="hline"></div>
+		 			<p>You will recieve a email, call, or text when the payment is due. This will ensure that you don't make any late payments</p>
+                    <div class = "form-errors"></div>
+		 			<form role="form" class="form-horizontal">  
+                    
+                    	<label for = "bill-info" class = "section-title">Bill Information</label>                                          
+                        <div class="form-group" id = "bill-info" name = "bill-info">
+                        <label for = "ccname" class = "col-xl-1 col-md-2  col-xs-6">Credit Card Name</label>
+                        <div class= "col-xl-3 col-md-4 col-xs-6">  
+					    	<input type="text" class="form-control" id="ccname" placeholder="Credit Card Company">
+                        </div>
+                        <label for = "ccminbal" class = "col-xl-1 col-md-2  col-xs-6">Minimum Payment Due ($)</label>
+                        <div class= "col-xl-3 col-md-4 col-xs-6"> 
+                        
+                        	<div class = "input-group">
+                            	<span class = "input-group-addon">$</span>
+	                        	<input type="text" class="form-control" id="ccminbal" placeholder="Minimum Payment Due($)">
+                            </div>
+                        </div>
+                        <label for = "cctotbal" class = "col-xl-1 col-md-2  col-xs-6">Total Previous Balance($)</label>
+                        <div class= "col-xl-3 col-md-4 col-xs-6"> 
+                        	<div class = "input-group">
+                            	<span class = "input-group-addon">$</span>
+                        		<input type="text" class="form-control" id="cctotbal" placeholder="Total Previous Balance($)">
+                            </div>
+                        </div>
+                        
+                        <label for = "duedate" class = "col-xl-2 col-md-2  col-xs-6">Payment Due Date</label>
+                        <div class= "col-xl-2 col-md-4 col-xs-6"> 
+                        	<input type="text" class="form-control" id="duedate" placeholder="Payment Due Date">
+                        </div>
+                                               
+                                              
+                      </div><!-- form group bill-info-->
+                      
+                      
+                      <label for = "personal-info" class = "section-title">Personal Information</label>                                          
+                        <div class="form-group" id = "bill-info" name = "personal-info">                        
+                        
+                        <label for = "phonenum" class = "col-xl-2 col-md-2  col-xs-6">Phone number</label>
+                        <div class= "col-xl-2 col-md-4 col-xs-6"> 
+                        	<input type="text" class="form-control" id="phonenum" placeholder="Phone number">
+                        </div>
+                        
+                        <label for = "email" class = "col-xl-2 col-md-2  col-xs-6">Email</label>
+                        <div class= "col-xl-2 col-md-4 col-xs-6"> 
+                        	<input type="text" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        
+                       
+                        
+                        <label for = "email" class = "col-xl-2 col-md-2  col-xs-6">Notification Time</label>
+                        <div class="col-xl-2 col-md-4 col-xs-6">
+   							<input id="notify-time" value="" data-default="20:48" class="form-control">
+    						<!--<button type="button" id="button-a">Select minute</button>
+    						<button type="button" id="button-b">Select hour</button> -->
+						</div>
+                        
+                                              
+                      </div><!-- form group personal-info-->
+                      
+                       <label for = "notify-type" class = "section-title">Notification Type</label>
+                        
+                       		<div name = "notify-type" class="form-group">
+    						<label for = "phone-notify" class = "col-xl-2 col-md-2  col-xs-6">Notify by Phone</label>
+                        	<div class= "col-xl-2 col-md-2 col-xs-6"> 
+                        		<input type="checkbox" name="phone-notify" id = "phone-notify" checked>
+                        	</div>
+                        	</div>
+                       		<div name = "notify-type" class="form-group">
+                        	<label for = "email-notify" class = "col-xl-2 col-md-2  col-xs-6">Notify by Email</label>
+                        	<div class= "col-xl-2 col-md-2 col-xs-6"> 
+                        		<input type="checkbox" name="email-notify" id = "email-notify">
+                        	</div>
+                            </div>
+                        
+                        	
+                       		<div name = "notify-type" class="form-group">
+                            <label for = "text-notify" class = "col-xl-2 col-md-2  col-xs-6">Notify by Text</label>
+                        	<div class= "col-xl-2 col-md-2 col-xs-6"> 
+                        		<input type="checkbox" name="text-notify" id = "text-notify">
+                        	</div>
+                        	</div><!-- form group notification-type-->
+                            
+					  	<button type="button" class="btn btn-theme" id = "submit-button">Submit</button>
+					</form>
+			</div><! --/col-lg-12 -->
+	 		
+	 	</div><! --/row -->
+	 </div><! --/container -->
+
+
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	
+	 
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/retina-1.1.0.js"></script>
+	<script src="assets/js/jquery.hoverdir.js"></script>
+	<script src="assets/js/jquery.hoverex.min.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+  	<script src="assets/js/jquery.isotope.min.js"></script>
+  	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/clockpicker.js"></script>
+	<script src="assets/js/clockpick-window.js"></script>
+	<script src="assets/js/datepicker/bootstrap-datepicker.js"></script>
+	<script src="assets/js/bootstrap-switch.js"></script>
+    <script src="assets/js/bootstrap-switch-activate.js"></script>
+  	<script src="assets/js/payoff.js"></script>
+     
+	
+
+  </body>
+</html>
